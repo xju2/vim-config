@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'fholgado/minibufexpl.vim'
@@ -79,7 +79,7 @@ autocmd FileType python set foldmethod=indent
 autocmd FileType c cpp set foldmethod=syntax
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 set encoding=utf-8
 
