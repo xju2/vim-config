@@ -64,6 +64,7 @@ set incsearch
 set wildmode=list:longest
 
 let python_highlight_all=1
+<<<<<<< HEAD
 
 "autocmd FileType python set foldmethod=indent
 "autocmd FileType c cpp set foldmethod=syntax
