@@ -75,8 +75,8 @@ if 'VIRTUA_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-autocmd FileType python set foldmethod=indent
-autocmd FileType c cpp set foldmethod=syntax
+"autocmd FileType python set foldmethod=indent
+"autocmd FileType c cpp set foldmethod=syntax
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 "autocmd vimenter * NERDTree
