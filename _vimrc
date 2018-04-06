@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'fholgado/minibufexpl.vim'
@@ -25,7 +25,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/syntastic'
 
 ""code folding
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,7 +46,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 let NERDTreeIgnore=['\.pyc$', '\~$']
-" filetype plugin on
+filetype plugin on
 set hlsearch
 set tabstop=4
 set autoindent
@@ -55,31 +55,22 @@ set t_kb=
 set ofu=syntaxcomplete#Complete
 set shiftwidth=4
 set ruler
-set nu
-set expandtab
+"set nu
+autocmd FileType python setlocal expandtab
+autocmd FileType c cpp setlocal expandtab
 set wildchar=<Tab>
 set smartcase
 set incsearch
 set wildmode=list:longest
 
 let python_highlight_all=1
-"python with virtualenv support
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUA_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir,'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
 
-autocmd FileType python set foldmethod=indent
-autocmd FileType c cpp set foldmethod=syntax
+"autocmd FileType python set foldmethod=indent
+"autocmd FileType c cpp set foldmethod=syntax
+"
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 set encoding=utf-8
 
@@ -95,3 +86,7 @@ map <F3> :mksession! ~/sessions2<CR>
 set diffopt+=iwhite
 set diffopt+=icase
 syntax on
+
+"set background=dark
+"colorscheme elrodeo
+"colorscheme newproggie 
