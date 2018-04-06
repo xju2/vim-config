@@ -2,6 +2,7 @@ set nocp
 filetype off  " required by bundle
 
 " set the runtime path to include Vundle and initialize
+let g:vundle_default_git_proto='git'
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
