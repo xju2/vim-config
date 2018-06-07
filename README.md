@@ -3,7 +3,7 @@ Current configuration is based on [Vundle](https://github.com/VundleVim/Vundle.v
 
 Instructions to install the configuration
  * git clone https://github.com/xju2/vim-config.git ~/.vim
- * git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ * git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
  * ln -s .vim/\_vimrc .vimrc
  * vi 
  * :PluginInstall
