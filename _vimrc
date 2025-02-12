@@ -11,7 +11,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 "Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'fholgado/minibufexpl.vim'
 
 "manage files
